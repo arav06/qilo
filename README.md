@@ -12,6 +12,7 @@
 192.168.1.13 22 user pass
 ```
 Where 192.168.1.13 is the IP of the server, 22 is the port on which SSH is running, user is the username and pass is the username's password
+<br>
 You can add more IPs, ports, usernames and passwords but the corresponding information for each server should be on the same line separated by 1 space
 
 * Save the file, mark main.py as an executable and run it as: ./main.py info.txt
@@ -35,3 +36,12 @@ chmod +x main.py
 * Paramiko
 
 * Colorama
+
+### Updates
+
+v1.1(Work in progress)
+* Add support to use private keys 
+
+* Endless connection to SSH server so that the program does not have to be run again to execute more commands
+
+There will be more updates in the future
