@@ -23,7 +23,7 @@ You can add more IPs, ports, usernames and passwords but the corresponding infor
 
 * Ping: Pings IP addresses specified in the list. Can be used in the command input, by simply typing 'ping'
 
-* OS Information: Displays the OS information of all servers in the list. Can be used in the command input, by simply typing 'os-info'. Will only work for Linux.
+* OS Information: Displays the OS information of all servers in the list. Can be used in the command input, by simply typing 'os-info'. Will only work for Linux
 
 ### Installation
 
