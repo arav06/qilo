@@ -21,7 +21,7 @@ You can add more IPs, ports, usernames and passwords but the corresponding infor
 
 ### Modules
 
-* Ping: Pings IP addresses specified in the list
+* Ping: Pings IP addresses specified in the list. Can be used in the command input, by simply typing 'ping'
 
 ### Installation
 
