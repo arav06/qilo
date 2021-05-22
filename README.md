@@ -48,6 +48,4 @@ v1.1(Work in progress)
 
 * Endless connection to SSH servers so that the program does not have to be run again to execute more commands
 
-* OS Information module for Windows
-
 There will be more updates in the future
