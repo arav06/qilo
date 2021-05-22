@@ -11,7 +11,7 @@
 ```
 192.168.1.13 22 user pass linux
 ```
-Where '192.168.1.13' is the IP of the server, '22' is the port on which SSH is running, 'user' is the username, 'pass' is the username's password and 'windows' is the operating system. The 2 operating systems which can be used with Qilo are 'windows' and 'linux'
+Where '192.168.1.13' is the IP of the server, '22' is the port on which SSH is running, 'user' is the username, 'pass' is the username's password and 'linux' is the operating system. The 2 operating systems which can be used with Qilo are 'windows' and 'linux'
 <br>
 You can add more IPs, ports, usernames and passwords but the corresponding information for each server should be on the same line separated by 1 space
 
