@@ -1,6 +1,6 @@
 # Qilo SSH
 
-## Control multiple SSH servers at once
+## Control multiple Linux/Windows servers at once
 
 ### How to use
 * Download the github repository
