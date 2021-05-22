@@ -15,7 +15,7 @@ Where 192.168.1.13 is the IP of the server, 22 is the port on which SSH is runni
 <br>
 You can add more IPs, ports, usernames and passwords but the corresponding information for each server should be on the same line separated by 1 space
 
-* Save the file, mark main.py as an executable and run it as: ./main.py info.txt
+* Save the file and and run it as: python3 main.py info.txt
 
 * Enter the command as your input and the output for each server will be displayed
 
@@ -31,8 +31,7 @@ You can add more IPs, ports, usernames and passwords but the corresponding infor
 git clone https://github.com/arav06/qilo-ssh/
 cd qilo-ssh
 pip install -r requirements.txt
-chmod +x main.py
-./main.py
+python3 main.py
 ```
 
 ### Requirements
