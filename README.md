@@ -44,8 +44,11 @@ chmod +x main.py
 ### Updates
 
 v1.1(Work in progress)
-* Add support to use private keys 
 
-* Endless connection to SSH server so that the program does not have to be run again to execute more commands
+* Support to use private keys 
+
+* Endless connection to SSH servers so that the program does not have to be run again to execute more commands
+
+* OS Information module for Windows
 
 There will be more updates in the future
