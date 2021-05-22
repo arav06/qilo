@@ -19,6 +19,10 @@ You can add more IPs, ports, usernames and passwords but the corresponding infor
 
 * Enter the command as your input and the output for each server will be displayed
 
+### Modules
+
+* Ping: Pings IP addresses specified in the list
+
 ### Installation
 
 ```
