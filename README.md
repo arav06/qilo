@@ -7,7 +7,7 @@
 
 * In the same directory as the main.py file, create a txt file such as info.txt
 
-* In the info.txt, follow this format to specify the required information
+* In info.txt, follow this format to specify the required information
 ```
 192.168.1.13 22 user pass
 ```
@@ -21,7 +21,7 @@ You can add more IPs, ports, usernames and passwords but the corresponding infor
 
 ### Modules
 
-* Qping: Pings IPs specified in the list by typing 'qping' in the input 
+* Qping: Pings IPs specified in the list by typing 'qping' 
 
 * Qclear: Clears your terminal by typing 'qclear' 
 
