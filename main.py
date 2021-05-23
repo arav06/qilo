@@ -1,6 +1,6 @@
 import os
 import sys
-
+import paramiko
 banner = """
 
 ▒█▀▀█ ░▀░ █░░ █▀▀█ ▒█▀▀▀█ ▒█▀▀▀█ ▒█░▒█ 
@@ -18,12 +18,13 @@ except:
     print("Such as 192.168.13 22 admin password \nWhere the values are separated by ONLY 1 space")
 	
     exit()
+    
 cmd = str(input("Command> "))
 if cmd == "":
     print("Specify a command/module")
-elif cmd =="ping":
-    info = open(info,"r")
-    f = info.read()
+elif cmd =="qping":
+    info2 = open(info,"r")
+    f = info2.read()
     lines = f.split("\n")
     print("\n")
     for line in lines:
@@ -43,10 +44,9 @@ elif cmd =="ping":
 
     sys.exit()
 
-
 else:
-    info = open(info,"r")
-    f = info.read()
+    info2 = open(info,"r")
+    f = info2.read()
     lines = f.split("\n")
     print("\n")
     for line in lines:
@@ -58,19 +58,18 @@ else:
             port = words[1]
             user = words[2]
             passwd = words[3]
-            
+            ssh = paramiko.SSHClient()
+            ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+            ssh.connect(ip, port, user, passwd)
 
-            print(f"[+]Details for {ip} \n")
-            print(f"Port = {port}")
-            print(f"Username = {user}")
-            print(f"Password = {passwd}")
+            stdin, stdout, stderr = ssh.exec_command(cmd)
+            lines = stdout.readlines()
+            string = '' 
+            for i in lines:
+                string += i   
+            print(f"[+]Results from {ip} \n")
+            print(string)
             print("\n")
-    a = [str(os.system(cmd))]
-    string = '' 
-    for i in a:
-        string += i   
-    print(string)
-    print("Thank you for using me :)")
 
     sys.exit()
 
