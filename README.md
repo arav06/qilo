@@ -32,12 +32,6 @@ pip install -r requirements.txt
 python main.py
 ```
 
-### Requirements
-
-* Python3
-
-* Paramiko
-
 ### Updates
 
 v1.1(Work in progress)
