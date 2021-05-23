@@ -1,4 +1,5 @@
 # Importing Modules
+
 import os
 import sys
 import paramiko
@@ -23,7 +24,7 @@ print("\nWelcome to Qilo SSH, type 'qhelp' to display the help menu :) \n")
 try:
     info = sys.argv[1]
 except:
-    print("python3 Qilo.py FILE \nCreate a file containing the required information \n")
+    print("python3 main.py FILE \nCreate a file containing the required information \n")
     print("In a txt file, add the IP, Port, Username and Password of the SSH server in this format")
     print("\nIP Port Username Password \n")
     print("Such as '192.168.13 22 admin password' \nWhere the values are separated by ONLY 1 space")
@@ -85,7 +86,7 @@ while True:
     elif cmd == "qhelp":
         print("Welcome to Qilo SSH, an SSH client that lets you control multiple Windows/Linux Servers at once :) \n")
         print("Developed by Arav Budhiraja(https://github.com/arav06) in 2021 \n")
-        print("\nType any command/module in the prompt to control your servers \n")
+        print("\nTypeany command/module in the prompt to control your servers \n")
         print("Modules: \n")
         print("* Qping: Pings IPs specified in the list by typing 'qping' in the input \n")
         print("* Qclear: Clears your terminal by typing 'qclear' \n")
@@ -93,7 +94,7 @@ while True:
         print("* QSys: Displays the System Information for all hosts by typing 'qsys' \n")
         continue
     
-    # Prints System Information for all hosts
+    # Prints OS information for all hosts
     elif cmd == "qsys":
         info2 = open(info,"r")
         f = info2.read()
@@ -111,20 +112,33 @@ while True:
                 ssh = paramiko.SSHClient()
                 ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
                 ssh.connect(ip, port, user, passwd)
-                command = "wmic os get Status, Caption, BuildNumber, OSArchitecture & uname -a"
-                stdin, stdout, stderr = ssh.exec_command(command)
+                command1 = "wmic os get Status, Caption, BuildNumber, OSArchitecture"
+                command2 = "uname -a"
+                stdin, stdout, stderr = ssh.exec_command(command1)
+                stdin2, stdout2, stderr2 = ssh.exec_command(command2)
                 output = stdout.readlines()
                 output2 = stderr.readlines()
+                output3 = stdout2.readlines()
+                output4 = stderr2.readlines()
                 string = '' 
                 string2 = ''
+                string3 = '' 
+                string4 = ''
                 for i in output:
                     string += i 
                 for j in output2:
                     string2 += j  
+                for k in output3:
+                    string3 += k
+                for l in output4:
+                    string4 += l
                 print("\n") 
                 print(f"[+]Results from {ip}\n")
                 print(string)
                 print(string2)
+                print(string3)
+                print(string4)
+                print("\n")
         continue
 
      # Executing commands on the servers
