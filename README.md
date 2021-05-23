@@ -1,4 +1,4 @@
-# Qilo SSH
+# <b>Qilo SSH</b>
 
 ## Control multiple Linux/Windows servers at once
 
@@ -8,7 +8,7 @@
 * In the same directory as the main.py file, create a txt file such as info.txt
 
 * In the info.txt, follow this format to specify the required information
-```txt
+```
 192.168.1.13 22 user pass
 ```
 Where '192.168.1.13' is the IP of the server, '22' is the port on which SSH is running, 'user' is the username and 'pass' is the username's password
@@ -21,7 +21,13 @@ You can add more IPs, ports, usernames and passwords but the corresponding infor
 
 ### Modules
 
-* QPing: Pings IP addresses specified in the list. Can be used in the command input, by simply typing 'qping'
+* Qping: Pings IPs specified in the list by typing 'qping' in the input 
+
+* Qclear: Clears your terminal by typing 'qclear' 
+
+* Qhelp: Displays the help menu by typing 'qhelp'
+
+* QSys: Displays the System Information for all hosts by typing 'qsys' 
 
 ### Installation
 
@@ -38,6 +44,6 @@ v1.1(Work in progress)
 
 * Use private SSH keys
 
-* OS Information Module 
+* Add more modules
 
 There will be more updates in the future
