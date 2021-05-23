@@ -23,7 +23,7 @@ print("\nWelcome to Qilo SSH, type 'qhelp' to display the help menu :) \n")
 try:
     info = sys.argv[1]
 except:
-    print("python3 main.py FILE \nCreate a file containing the required information \n")
+    print("python3 Qilo.py FILE \nCreate a file containing the required information \n")
     print("In a txt file, add the IP, Port, Username and Password of the SSH server in this format")
     print("\nIP Port Username Password \n")
     print("Such as '192.168.13 22 admin password' \nWhere the values are separated by ONLY 1 space")
