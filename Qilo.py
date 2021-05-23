@@ -93,7 +93,7 @@ while True:
         print("* QSys: Displays the System Information for all hosts by typing 'qsys' \n")
         continue
     
-    # Prints OS information for all hosts
+    # Prints System Information for all hosts
     elif cmd == "qsys":
         info2 = open(info,"r")
         f = info2.read()
