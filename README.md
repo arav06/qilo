@@ -36,9 +36,7 @@ python main.py
 
 v1.1(Work in progress)
 
-* Add support to use private keys
-
-* Endless connection to SSH server so that the program does not have to be run multiple times to execute more commands
+* Use private SSH keys
 
 * OS Information Module 
 
