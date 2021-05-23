@@ -15,7 +15,7 @@ Where '192.168.1.13' is the IP of the server, '22' is the port on which SSH is r
 <br>
 You can add more IPs, ports, usernames and passwords but the corresponding information for each server should be on the same line and separated by ONLY 1 space
 
-* Save the file and run it as: ```python Qilo.py info.txt```
+* Save the file and run it ```python Qilo.py info.txt```
 
 * Enter the command as your input and the results for each server will be displayed
 
