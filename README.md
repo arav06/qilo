@@ -1,4 +1,4 @@
-# <b>Qilo SSH</b>
+# <b>Qilo SSH v1.0</b>
 
 ## Control multiple Linux/Windows servers at once
 
@@ -29,13 +29,13 @@ You can add more IPs, ports, usernames and passwords but the corresponding infor
 
 * QSys: Displays the System Information for all hosts by typing 'qsys' 
 
-### Installation
+### Setup
 
 ```
 git clone https://github.com/arav06/qilo-ssh/
 cd qilo-ssh
 pip install -r requirements.txt
-python main.py
+python Qilo.py
 ```
 
 ### Updates
