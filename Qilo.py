@@ -26,7 +26,7 @@ except:
     print("python3 main.py FILE \nCreate a file containing the required information \n")
     print("In a txt file, add the IP, Port, Username and Password of the SSH server in this format")
     print("\nIP Port Username Password \n")
-    print("Such as 192.168.13 22 admin password \nWhere the values are separated by ONLY 1 space")
+    print("Such as '192.168.13 22 admin password' \nWhere the values are separated by ONLY 1 space")
 	
     exit()
 
@@ -85,7 +85,7 @@ while True:
     elif cmd == "qhelp":
         print("Welcome to Qilo SSH, an SSH client that lets you control multiple Windows/Linux Servers at once :) \n")
         print("Developed by Arav Budhiraja(https://github.com/arav06) in 2021 \n")
-        print("\nExecute any command/module in the prompt to control your servers \n")
+        print("\nType any command/module in the prompt to control your servers \n")
         print("Modules: \n")
         print("* Qping: Pings IPs specified in the list by typing 'qping' in the input \n")
         print("* Qclear: Clears your terminal by typing 'qclear' \n")
