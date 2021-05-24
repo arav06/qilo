@@ -38,7 +38,7 @@ pip install -r requirements.txt
 python Qilo.py
 ```
 #### OR
-You can run this as a docker container using the Dockefile
+You can run this as a docker container using the Dockerfile
 
 ```
 git clone https://github.com/arav06/qilo/
