@@ -33,7 +33,7 @@ You can add more IPs, ports, usernames and passwords but the corresponding infor
 
 ```
 git clone https://github.com/arav06/qilo-ssh/
-cd qilo-ssh
+cd qilo
 pip install -r requirements.txt
 python Qilo.py
 ```
