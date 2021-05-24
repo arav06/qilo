@@ -37,6 +37,16 @@ cd qilo
 pip install -r requirements.txt
 python Qilo.py
 ```
+#### OR
+
+```
+git clone https://github.com/arav06/qilo/
+cd qilo
+docker build -t "qilo-image" .
+docker run -dt --name qilo qilo-image
+docker exec -it qilo /bin/bash
+python Qilo.py
+```
 
 ### Updates
 
