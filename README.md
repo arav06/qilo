@@ -31,7 +31,7 @@ You can add more IPs, ports, usernames and passwords but the corresponding infor
 
 ### Setup
 
-```
+```bash
 git clone https://github.com/arav06/qilo/
 cd qilo
 pip install -r requirements.txt
@@ -40,7 +40,7 @@ python Qilo.py
 #### OR
 You can run this as a docker container using the Dockerfile
 
-```
+```bash
 git clone https://github.com/arav06/qilo/
 cd qilo
 docker build -t "qilo-image" .
