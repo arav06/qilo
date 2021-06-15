@@ -1,6 +1,6 @@
 # <b>Qilo SSH v1.0</b>
 
-## Control multiple Linux/Windows servers at once
+## Control multiple Linux/Windows servers at once over SSH
 
 ### How to use
 * Download the github repository
