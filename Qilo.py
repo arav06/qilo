@@ -1,18 +1,16 @@
 # Importing Modules
-
 import os
 import sys
 import paramiko
 import getpass as gp
 import random
 import string
-# Printing Banner
-
+# Printing Banner 
 banner = """
 
-▒█▀▀█ ░▀░ █░░ █▀▀█ ▒█▀▀▀█ ▒█▀▀▀█ ▒█░▒█ 
-▒█░▒█ ▀█▀ █░░ █░░█ ░▀▀▀▄▄ ░▀▀▀▄▄ ▒█▀▀█ 
-░▀▀█▄ ▀▀▀ ▀▀▀ ▀▀▀▀ ▒█▄▄▄█ ▒█▄▄▄█ ▒█░▒█
+ █▀▀█  ▀  █   █▀▀█  █▀▀▀█  █▀▀▀█  █  █ 
+ █  █ ▀█▀ █   █  █  ▀▀▀▄▄  ▀▀▀▄▄  █▀▀█ 
+ ▀▀█▄ ▀▀▀ ▀▀▀ ▀▀▀▀  █▄▄▄█  █▄▄▄█  █  █
 
 """
 
